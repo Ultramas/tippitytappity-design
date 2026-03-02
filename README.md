@@ -7,7 +7,7 @@ tippitytappity is a program to practice typing
 
 ```mermaid
 classDiagram
-  ExampleParent <|-- ExampleChild
+  User <|-- Level
   class ExampleParent{
         - name: string
         - email: string
@@ -20,4 +20,16 @@ classDiagram
         + add_badge(title: string)
         + get_badges() vector~string~
   }
+
+  Phrase o-- Word
+  class Phrase{
+        - text: (pass: string)
+        - numWords: integer
+  }
+  class Word{
+        - text: integer
+        - numbers: boolean
+        - special chars: boolean
+        - caps: boolean
+  }     
 ```
