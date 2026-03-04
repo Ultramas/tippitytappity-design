@@ -8,6 +8,7 @@ tippitytappity is a program to practice typing
 ```mermaid
 classDiagram
   User <|-- Level
+  User <|-- Test
   class User{
         - name: string
         - email: string
@@ -31,5 +32,26 @@ classDiagram
         - numbers: boolean
         - special chars: boolean
         - caps: boolean
-  }     
+  }
+
+  class Test{
+        - accuracy: float
+        - speed: float
+        - start_time: datetime
+        - end_time: datetime
+        - number_correct: integer
+        - number_incorrect: integer
+  }
+  
+  class Test{
+        - accuracy: float
+        - speed: float
+        - start_time: datetime
+        - end_time: datetime
+        - number_correct: integer
+        - number_incorrect: integer
+  }
+
+  
+
 ```
