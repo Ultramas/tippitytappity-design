@@ -41,6 +41,7 @@ classDiagram
         - end_time: datetime
         - number_correct: integer
         - number_incorrect: integer
+        - testHist: vector ~ speed, accuracy, number_correct, number_incorrect
   }
   
   class Test{
