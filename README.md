@@ -52,8 +52,8 @@ classDiagram
         + TypingTest(id: UUID, phrase: Phrase)
         + start_time: datetime
         + end_time: datetime
-        + getWordCount(): integer
-        + getWpm(): float
+        + getWordCount() integer
+        + getWpm() float
   }
 
   
