@@ -44,12 +44,16 @@ classDiagram
   }
   
   class Test{
+        - UUID id
         - accuracy: float
         - speed: float
-        - start_time: datetime
-        - end_time: datetime
         - number_correct: integer
         - number_incorrect: integer
+        + TypingTest(id: UUID, phrase: Phrase)
+        + start_time: datetime
+        + end_time: datetime
+        + getWordCount(): integer
+        + getWpm(): float
   }
 
   
